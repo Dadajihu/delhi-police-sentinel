@@ -1,72 +1,74 @@
-# Delhi Police AI Dashboard 🚔
+# 🛡️ Sentinel AI | Delhi Traffic Police Enforcement
 
-A modern, high-performance web application designed for traffic management and vehicle analysis using state-of-the-art AI. This system integrates automatic number plate recognition, image authenticity verification, and a robust real-time database.
+Sentinel AI is a cutting-edge web platform designed for the **Delhi Traffic Police** to bridge the gap between citizen vigilance and official enforcement. It leverages AI to process traffic violations reported by citizens, streamlining the legal challan issuance process.
 
-## 🚀 Features
+---
 
-- **Automatic Number Plate Recognition (ANPR)**: Powered by Roboflow for high-accuracy license plate extraction.
-- **AI-Powered Image Analysis**: Utilizes Google Gemini for advanced visual content understanding and traffic violation detection.
-- **Image Authenticity Verification**: Integration with Sightengine to ensure images are genuine and not manipulated.
-- **Real-time Data Management**: Built with Supabase for instant updates on vehicle logs and review status.
-- **Modern UI/UX**: Responsive dashboard built with Next.js 16 (App Router), Tailwind CSS, and Lucide icons.
+## ✨ Key Features
+
+-   **📸 Citizen Reporter**: Mobile-first interface for citizens to upload photo/video evidence of traffic violations.
+-   **🤖 AI-Powered Analysis**: Integrated license plate recognition and violation classification (Roboflow & Gemini).
+-   **⚖️ Officer Dashboard**: Comprehensive queue management for police officers to review cases and issue digital challans.
+-   **🔒 Integrity Focused**: Every piece of evidence is hashed and timestamped to ensure a tamper-proof audit trail for legal proceedings.
+-   **📱 PWA Ready**: Optimized for mobile web with "Add to Home Screen" support, providing a native-app-like experience.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 16](https://nextjs.org/)
-- **Database & Auth**: [Supabase](https://supabase.com/)
-- **AI Models**: 
-  - Roboflow (ANPR)
-  - Google Gemini (General Vision)
-- **Image Verification**: Sightengine
-- **Styling**: Tailwind CSS
+-   **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+-   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Database & Auth**: [Supabase](https://supabase.com/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Hosting**: Recommended for [Vercel](https://vercel.com/)
 
-## 📋 Prerequisites
+---
 
-Before running the project, ensure you have:
-- Node.js 18+ installed
-- A Supabase project set up
-- API keys for:
-  - Google Gemini
-  - Roboflow
-  - Sightengine
+## 🚀 Getting Started
 
-## ⚙️ Installation & Setup
+### Prerequisites
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Dadajihu/delhi-police.git
-   cd delhi-police
-   ```
+-   Node.js 20+
+-   A Supabase project
+-   Roboflow/Gemini API keys for AI processing
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Installation
 
-3. **Configure Environment Variables**:
-   Create a `.env.local` file in the root directory and add the following:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   GEMINI_API_KEY=your_gemini_key
-   ROBOFLOW_API_KEY=your_roboflow_key
-   SIGHTENGINE_API_USER=your_sightengine_user
-   SIGHTENGINE_API_SECRET=your_sightengine_secret
-   ```
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Dadajihu/delhi-police-sentinel.git
+    cd delhi-police-sentinel
+    ```
 
-4. **Run the Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) to view the app.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## 📁 Project Structure
+3.  **Environment Setup:**
+    Rename `.env.example` to `.env.local` and add your credentials:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+    ROBOFLOW_API_KEY=your_roboflow_key
+    GEMINI_API_KEY=your_gemini_key
+    ```
 
-- `/src/app`: Next.js App Router pages and API routes.
-- `/src/components`: Reusable UI components.
-- `/src/lib`: Utility functions and shared logic (Supabase client, hashing, etc.).
-- `/supabase`: SQL schema definitions for the database setup.
+4.  **Run locally:**
+    ```bash
+    npm run dev
+    ```
 
-## 📄 License
+---
 
-This project is private and intended for internal use.
+## 📱 Mobile Experience
+
+Though this is now a web platform, it is fully optimized for mobile devices. 
+-   **On iOS**: Open in Safari → Share → Add to Home Screen.
+-   **On Android**: Open in Chrome → Three Dots → Install App.
+
+---
+
+## ⚖️ License
+
+Official Internal Platform for Delhi Traffic Police. &copy; 2026.
